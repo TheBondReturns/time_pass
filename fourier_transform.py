@@ -9,7 +9,7 @@ def f(x):
 def g(x,w):
     return f(x)*np.cos(w*x)
 def h(x,w):
-    return f(x)*np.sin(w*x)
+    return f(x)*np.sin(-w*x)
 def reFT(w):
     return scipy.integrate.quad(g,0,+np.inf,args=(w,))
 def imFT(w):
